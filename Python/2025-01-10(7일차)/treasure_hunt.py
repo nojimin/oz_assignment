@@ -98,15 +98,17 @@ def move_player(player_pos, n):
 
 # 게임 실행
 def play_game():
-    n, treasure_pos, player_pos = initialize_game()
+    n, treasure_pos, player_pos = initialize_game() # 다른 함수에 쓸 값 받아오기
     play_count = 0
 
+    # 보물을 찾을 때까지 무한 반복
     while player_pos != treasure_pos:
         print(draw_grid(n, player_pos, treasure_pos))
         calculate_distance(treasure_pos, player_pos)
         player_pos = move_player(player_pos, n)
         play_count += 1
 
+    # 보물을 찾았을 때 최종 위치 알려주기
     print(draw_grid(n, player_pos, treasure_pos))
     print(f"축하합니다! 보물을 찾았습니다! 총 이동 횟수: {play_count}번")
 
