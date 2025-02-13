@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* style.css */
+#profile{
+    background-color: #EAE6F7;
+    padding: 100px 0;
+}
+#name{
+    width: 80%;
+    margin: 0 auto 50px auto;
+    color: #4A148C;
+}
+.profile-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.profile-img{
+    width: 30%;
+}
+.profile-text{
+    width: 60%;
+}
+.profile-text p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1A237E;
+}
+
+#funfact{
+    background-color: #F8E1F4;
+    padding: 100px 0;
+}
+.ff-text{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A237E;
+}
